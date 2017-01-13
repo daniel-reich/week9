@@ -1,30 +1,37 @@
 package HTTP_Method;
 
+import java.util.Date;
+
 /**
  * Created by Daniel on 1/13/17.
  */
 public class Guest {
-    private int guestId;
-    private String dateTimeChanged;
+    private Date dateTimeChanged;
     private String first_name;
     private String last_name;
     private String email;
     private String address;
     private int tickets;
 
-    public int getGuestId() {
-        return guestId;
+
+    public void addTicket() {
+        this.tickets = this.tickets+1;
     }
 
-    public void setGuestId(int guestId) {
-        this.guestId = guestId;
+    public void subtractTicket() {
+        this.tickets = this.tickets-1;
     }
 
-    public String getDateTimeChanged() {
+
+
+
+
+
+    public Date getDateTimeChanged() {
         return dateTimeChanged;
     }
 
-    public void setDateTimeChanged(String dateTimeChanged) {
+    public void setDateTimeChanged(Date dateTimeChanged) {
         this.dateTimeChanged = dateTimeChanged;
     }
 
